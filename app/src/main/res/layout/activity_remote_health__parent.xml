@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="80sp"
+        android:text="sdad"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:layout_height="150sp"
+        android:id="@+id/textView"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20sp">
+
+
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginLeft="50sp"
+            android:text="Stats"
+            android:textSize="20sp"
+            android:background="@drawable/buttondesign"
+            android:onClick="openstats"
+            />
+
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginLeft="90sp"
+            android:text="Refresh"
+            android:textSize="20sp"
+            android:background="@drawable/buttondesign"
+            android:onClick="refresh"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/Transparent</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/green</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MyDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:buttonBarButtonStyle">@style/MyButtonsStyle</item>
+        <item name="android:colorBackground">@color/green</item>
+    </style>
+
+    <style name="MyButtonsStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/black_overlay</item>
+    </style>
+
+    <style name="watchpair" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/green</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/layout"
+    tools:context=".signup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Account Details"
+        android:textSize="20sp"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="20sp"/>
+        <EditText
+            android:id="@+id/usersignup"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="80sp"
+            android:layout_marginLeft="28sp"
+
+            android:layout_marginRight="28sp"
+            android:padding="10sp"
+            android:background="@drawable/border"
+            android:cursorVisible="true"
+            android:hint="EMAIL ID"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@color/cardview_dark_background"
+            />
+        <requestFocus/>
+
+    <EditText
+        android:id="@+id/passwordsignuo"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginLeft="28sp"
+        android:layout_marginTop="180sp"
+        android:layout_marginRight="28sp"
+        android:background="@drawable/border"
+        android:cursorVisible="true"
+        android:hint="PASSWORD"
+        android:maxLines="1"
+        android:inputType="textPersonName"
+        android:padding="10sp"
+        android:password="true"
+        android:textCursorDrawable="@color/cardview_dark_background" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/eye"
+        android:clickable="true"
+        android:onClick="showpass"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginLeft="330sp"
+        android:layout_marginTop="200sp"
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="320sp"
+    android:id="@+id/buttonlaysignup"
+    android:layout_marginLeft="40sp"
+    >
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="140sp"
+        android:layout_height="70sp"
+        android:onClick="Submit"
+        >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="SignUp"
+          android:textStyle="bold"
+          android:textSize="30sp"
+          android:layout_gravity="center"
+          android:paddingLeft="22sp"
+          />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="140sp"
+        android:layout_height="70sp"
+        android:layout_marginLeft="35sp"
+        android:onClick="cancel"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Cancel"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:paddingLeft="22sp"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
+</RelativeLayout>

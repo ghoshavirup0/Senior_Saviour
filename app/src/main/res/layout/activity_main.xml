@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/edittextanim"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="80sp"
+        android:layout_marginLeft="28sp"
+        android:layout_marginRight="28sp"
+        android:maxLines="1"
+        android:padding="10sp"
+        android:background="@drawable/edittextbackground"
+        android:cursorVisible="true"
+        android:hint="EMAIL ID"
+        android:inputType="textEmailAddress"
+        android:textCursorDrawable="@color/cardview_dark_background"
+        />
+    <requestFocus/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/parentidlayout">
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginLeft="28sp"
+            android:layout_marginRight="28sp"
+            android:layout_marginTop="30sp"
+            android:maxLines="1"
+            android:padding="10sp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittextbackground"
+            android:cursorVisible="true"
+            android:hint="PASSWORD"
+            android:password="true"
+            android:textCursorDrawable="@color/cardview_dark_background"
+            />
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/eye"
+            android:layout_marginLeft="-65sp"
+            android:layout_marginTop="50sp"
+            android:clickable="true"
+            android:onClick="showdata"
+            />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/parentid"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="28sp"
+        android:layout_marginRight="28sp"
+        android:padding="10sp"
+        android:background="@drawable/edittextbackground"
+        android:cursorVisible="true"
+        android:hint="PARENT ID"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textCursorDrawable="@color/cardview_dark_background"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioani"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="35sp"
+            android:textIsSelectable="false"
+            android:padding="10sp"
+            android:textStyle="bold"
+            android:id="@+id/userradio"
+            android:onClick="userchoosed"
+            android:textSize="30sp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="20sp"
+            android:onClick="parentchoosed"
+            android:textIsSelectable="false"
+            android:padding="10sp"
+            android:id="@+id/parentradio"
+            android:text="PARENT"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/buttonani">
+
+    <Button
+        android:layout_width="114sp"
+        android:layout_height="63sp"
+        android:layout_marginTop="45sp"
+        android:layout_marginLeft="60sp"
+        android:background="@drawable/buttondesign"
+        android:text="LogIN"
+        android:textSize="30sp"
+        android:onClick="login"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:layout_width="114sp"
+        android:layout_height="63sp"
+        android:layout_marginTop="45sp"
+        android:layout_marginLeft="56sp"
+        android:background="@drawable/buttondesign"
+        android:text="Reset"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:onClick="reset"
+
+        />
+</LinearLayout>
+    <View
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/black_overlay"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="72sp"
+        android:text="Create New Account"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:layout_marginLeft="80sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_marginTop="-30sp"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowColor="@color/black_overlay"
+        android:clickable="true"
+        android:onClick="signup"
+        />
+
+</LinearLayout>
+
+
+</LinearLayout>

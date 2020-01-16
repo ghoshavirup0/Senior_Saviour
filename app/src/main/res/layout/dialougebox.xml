@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green">
+
+
+    <EditText
+        android:id="@+id/remainder"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:paddingTop="110sp"
+        android:textSize="20sp"
+        android:background="@drawable/border"
+        android:layout_margin="10sp"
+        android:paddingBottom="10sp"
+        android:paddingLeft="10sp"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:hint="Send Short Note"
+        android:textColorHint="@color/black_overlay"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+    <requestFocus/>
+
+    <TextView
+        android:layout_width="71sp"
+        android:layout_height="wrap_content"
+        android:text="0/30"
+        android:textSize="16sp"
+        android:layout_marginLeft="300sp"
+        android:id="@+id/countt"/>
+
+
+</LinearLayout>
